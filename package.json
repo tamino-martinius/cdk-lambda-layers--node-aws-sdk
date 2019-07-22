@@ -14,12 +14,27 @@
     "lambda layer version"
   ],
   "author": "Tamino Martinius <dev@zaku.eu>",
+  "main": "./dist/index.js",
+  "module": "./dist/index.mjs",
+  "jsnext:main": "./dist/index.mjs",
+  "typings": "./dist/index.d.ts",
+  "license": "MIT",
+  "files": [
+    "dist/*"
+  ],
   "repository": {
     "type": "git",
     "url": "https://github.com/tamino-martinius/cdk-lambda-layers--node-aws-sdk.git"
   },
   "engines": {
     "node": ">=8.10.0"
+  },
+  "scripts": {
+    "build": "tsc",
+    "watch": "tsc -w",
+    "prepack": "cd nodejs && npm i --production",
+    "pack": "rm dist/nodejs.zip; zip dist/nodejs.zip nodejs -r",
+    "preversion": "npm run build && npm run pack"
   },
   "devDependencies": {
     "@types/node": "12.6.8",
