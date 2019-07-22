@@ -28,6 +28,7 @@
     "node": ">=8.10.0"
   },
   "scripts": {
+    "prebuild": "rm -rf dist/*",
     "build": "tsc",
     "watch": "tsc -w",
     "prepack": "cd nodejs && npm i --production",
