@@ -31,9 +31,9 @@
     "prebuild": "rm -rf dist/*",
     "build": "tsc",
     "watch": "tsc -w",
-    "prepack": "cd nodejs && npm i --production",
-    "pack": "rm dist/nodejs.zip; zip dist/nodejs.zip nodejs -r",
-    "preversion": "npm run build && npm run pack"
+    "prezip": "cd nodejs && npm ci --production",
+    "zip": "rm dist/nodejs.zip; zip dist/nodejs.zip nodejs -r",
+    "prepack": "npm run build && npm run zip"
   },
   "devDependencies": {
     "@types/node": "12.6.8",
