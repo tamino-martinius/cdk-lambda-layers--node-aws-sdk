@@ -1,6 +1,26 @@
 {
   "name": "@cdk-lambda-layers/node-aws-sdk",
   "description": "AWS CDK Lambda Layer for Node.js with newer version of aws-sdk package",
+  "version": "2.496.0-alpha.0",
+  "keywords": [
+    "aws",
+    "cdk",
+    "lambda",
+    "layer",
+    "node",
+    "nodejs",
+    "aws-sdk",
+    "cloud development kit",
+    "lambda layer version"
+  ],
+  "author": "Tamino Martinius <dev@zaku.eu>",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/tamino-martinius/cdk-lambda-layers--node-aws-sdk.git"
+  },
+  "engines": {
+    "node": ">=8.10.0"
+  },
   "devDependencies": {
     "@types/node": "12.6.8",
     "aws-cdk": "^1.1.0",
