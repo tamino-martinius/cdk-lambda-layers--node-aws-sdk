@@ -33,7 +33,7 @@
     "watch": "tsc -w",
     "prezip": "cd nodejs && npm ci --production",
     "zip": "rm dist/nodejs.zip; zip dist/nodejs.zip nodejs -r",
-    "preversion": "npm run build && npm run zip",
+    "preversion": "rm nodejs/package-lock.json && npm run build && npm run zip",
     "prepack": "npm run build && npm run zip"
   },
   "devDependencies": {
