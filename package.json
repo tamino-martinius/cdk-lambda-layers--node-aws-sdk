@@ -31,7 +31,7 @@
     "prebuild": "rm -rf dist/*",
     "build": "tsc",
     "watch": "tsc -w",
-    "prezip": "cd nodejs && rm node_modules -r &&  npm i --production",
+    "prezip": "cd nodejs && rm node_modules -fr &&  npm i --production",
     "zip": "rm dist/nodejs.zip; zip dist/nodejs.zip nodejs -r",
     "preversion": "npm run build && npm run zip",
     "prepack": "npm run build && npm run zip"
