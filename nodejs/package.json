@@ -4,6 +4,6 @@
   "author": "Tamino Martinius",
   "license": "MIT",
   "dependencies": {
-    "aws-sdk": "^2.497.0"
+    "aws-sdk": "2.497.0"
   }
 }
