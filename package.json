@@ -33,7 +33,6 @@
     "watch": "tsc -w",
     "prezip": "cd nodejs && rm -rf node_modules/* && npm i --production",
     "zip": "rm dist/nodejs.zip; zip dist/nodejs.zip nodejs -r",
-    "preversion": "npm run build && npm run zip",
     "prepack": "npm run build && npm run zip"
   },
   "devDependencies": {
