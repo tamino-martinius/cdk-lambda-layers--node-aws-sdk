@@ -1,7 +1,7 @@
 {
   "name": "@cdk-lambda-layers/node-aws-sdk",
   "description": "AWS CDK Lambda Layer for Node.js with newer version of aws-sdk package",
-  "version": "2.499.0",
+  "version": "2.500.0",
   "keywords": [
     "aws",
     "cdk",
