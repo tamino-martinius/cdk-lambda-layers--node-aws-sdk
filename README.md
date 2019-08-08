@@ -1,6 +1,6 @@
 # AWS CDK Lambda Layer for Node.js with newer version of aws-sdk package
 
-## Current packed version: `2.503.0`
+## Current packed version: `2.504.0`
 
 ### How to use?
 
